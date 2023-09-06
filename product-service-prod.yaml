@@ -1,0 +1,29 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    env:
+      show-values: "always"
+    configprops:
+      show-values: "always"
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/emedicare
+    username: emedicare
+    password: emedicare
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: "update"
+    properties:
+      hibernate:
+        '[show_sql]': true
+        '[format_sql]': true
+  sql:
+    init:
+      mode: always
+      platform: mysql
