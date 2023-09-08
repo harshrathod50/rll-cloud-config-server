@@ -11,9 +11,9 @@ management:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql.harsh.rathod.dev:3306/store
-    username: store
-    password: store1234
+    url: jdbc:mysql://localhost:3306/medicare
+    username: root
+    password: 
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     defer-datasource-initialization: true
