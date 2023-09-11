@@ -7,8 +7,8 @@ management:
 spring:
   datasource:
     url: jdbc:h2:mem:medicare
-    username: root
-    password: 
+    username: emedicare
+    password: emedicare
   jpa:
     defer-datasource-initialization: true
     properties:
