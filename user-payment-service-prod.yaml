@@ -11,9 +11,9 @@ management:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/medicare
-    username: root
-    password: priya
+    url: jdbc:mysql://localhost:3306/emedicare
+    username: emedicare
+    password: emedicare
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     defer-datasource-initialization: true
